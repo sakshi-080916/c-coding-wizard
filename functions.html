@@ -1,0 +1,327 @@
+<html>
+<head><title>Function Questions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Functions</h1>
+<a class="back" href="index.html">Back to Home</a>
+
+<div class="question">
+<h3>Question 1. Write a program to enter 2 number from the users add them and display the answer, again enter 2 number from the user subtract them and display the answer, again enter 2 number from the user add them and display the answer, again enter 2 number from the user multiply them and display the answer, again enter 2 number from the user subtract them and display the answer, again enter 2 number from the user multiply them and display the answer, again enter 2 number from the user divide them and display the answer, again enter 2 number from the user divide them and display the answer, again enter 2 number from the user add them and display the answer  .</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include &ltconio.h&gt;
+
+void enter(float *a,float*b)
+{
+printf("enter 2 numbers:");
+scanf("%f %f",a,b);
+}
+
+void add(float a,float b)
+{
+printf("addition:%\nf,a+b);
+}
+
+void sub(float p,float q)
+{
+printf("subtraction:%f\n",p-q);
+}
+
+void mult(float r,flaot s)
+{
+printf("multiplication:%f\n",r*s);
+}
+
+void div(float a,float b)
+{
+if(b!=0)
+{
+printf("divide:%f\n",a/b);
+}
+else
+{
+printf("error :zero division");
+	
+	void main()
+	{
+	float num1,num2;
+	clrscr();
+
+	enter(&num1,&num2);
+	add(num1,num2);
+
+	enter(&num1,&num2);
+	sub(num1,num2);
+
+	enter(&num1,&num2);
+	add(num1,num2);
+
+	enter(&num1,&num2);
+	mult(num1,num2);
+
+	enter(&num1,&num2);
+	sub(num1,num2);
+
+	enter(&num1,&num2);
+	mult(num1,num2);
+
+	enter(&num1,&num2);
+	div(num1,num2);
+
+	enter(&num1,&num2);
+	div(num1,num2);
+
+	enter(&num1,&num2);
+	add(num1,num2);
+
+}
+
+
+</pre>
+<p>Output:</p>
+<pre class="code">
+enter 2 numbers: 24.3  3
+addition: 27.3
+enter 2 numbers: 34  20
+substraction: 14
+enter 2 numbers: 56  4
+addition:  60
+enter 2 numbers:2  3
+multiplication: 6
+enter 2 numbers: 7  7
+substraction: 0
+enter 2 numbers:56  1
+multiplication: 56
+enter 2 numbers:24  2
+divide: 12
+enter 2 numbers:54  6
+divide: 9
+enter 2 numbers:34 89
+addition: 123
+</pre>
+</div>
+
+<div class="question">
+<h3>Question 2. Write a program to enter 10 number from the user add the number and display the answer .</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include &ltconio.h&gt;
+void enter(int arr[])
+{
+int i;
+printf("enter 10 numbers:\n");
+for(i=0;i<10;i++)
+{
+scanf("%d",&arr[i]);
+}
+}
+
+void add(int arr[],int*sum)
+{
+int i;
+*sum=0;
+for(i=0;i<10;i++)
+{
+*sum=*sum+arr[i];
+}
+}
+
+void display(int sum)
+{
+printf("\nsum of 10 no:%d",sum)
+}
+
+
+void main()
+{
+int arr[10];
+int sum;
+clrscr();
+enter(arr);
+add(arr,&sum);
+display(sum);
+}
+</pre>
+<p>Output:</p>
+<pre class="code">enter 10 numbers:
+2 5 6 7 6 65 45 34 8 9
+sum of 10 no: 181</pre>
+</div>
+
+
+<!--<div class="question">
+<h3>Question 3. Write a program to return an array from function  .</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include &ltconio.h&gt;
+
+</pre>
+<p>Output:</p>
+<pre class="code">dfhdsjg</pre>
+</div>-->
+
+
+<!--<div class="question">
+<h3>Question 4. Making following program using local and global variable ?
+Factorial , Reverse , Palindrome , Prime numbers, Armstrong , Fibonacci.</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include &ltconio.h&gt;
+
+</pre>
+<p>Output:</p>
+<pre class="code">dfhdsjg</pre>
+</div>-->
+
+
+<div class="question">
+<h3>Question 3. Swap numbers using Call by address .</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include &ltconio.h&gt;
+void swap(int *x, int *y)
+{
+int z;
+z = *x;
+*x = *y;
+*y = z;
+}
+
+
+void main()
+{
+int a, b;
+clrscr();   
+printf("Enter two numbers: ");
+scanf("%d %d", &a, &b);
+printf("\n a = %d\n b = %d", a, b);
+swap(&a, &b);  
+printf("swapping:\na = %d\nb = %d", a, b);
+}
+
+</pre>
+<p>Output:</p>
+<pre class="code">Enter two numbers:23  4
+a=23 
+b=4
+
+swapping:
+a=4 
+b=23
+</pre>
+</div>
+
+<div class="question">
+<h3>Question 4. Swap numbers using Call by function .</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include &ltconio.h&gt;
+void swap(int x, int y)
+{
+int z;
+z = x;
+x = y;
+y = z;
+printf("\nswapping:\n x = %d\ny = %d", x, y);
+}
+
+void main()
+{
+int a, b;
+clrscr();  
+printf("Enter two numbers: ");
+scanf("%d %d", &a, &b);
+printf("\n a = %d\nb = %d", a, b);
+swap(a, b);  
+}
+
+
+</pre>
+<p>Output:</p>
+<pre class="code">Enter two numbers:23  12
+a=23
+b=12
+swapping:
+x=12
+y=23
+</pre>
+</div>
+
+
+<div class="question">
+<h3>Question 5. Make function for find out power of number, enter the number and power from user .</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include &ltconio.h&gt;
+int power(int n,int p)
+{
+int x=1,i;
+for(i=0;i&ltp;i++)
+{
+x=x*n;
+}
+return x;
+}
+
+void main()
+{
+int num,pwr,x;
+clrscr();
+printf("Enter a Number: ");
+scanf("%d",&num);
+printf("Enter Power of Number: ");
+scanf("%d",&pwr);
+x=power(num,pwr);
+printf("result: %d",x);
+}
+</pre>
+
+<p>Output:</p>
+<pre class="code">Enter a Number:8
+Enter Power of Number:2
+result:64
+</pre>
+</div>
+
+<div class="question">
+<h3>Question 6. Make function for find out Cube a user entered number .</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include &ltconio.h&gt;
+
+int Cube(int n)
+{
+int x=1,i;
+for(i=0;i<3;i++)
+{
+x=x*n;
+}
+return x;
+}
+
+void main()
+{
+int num,x;
+clrscr();
+printf("Enter the Number: ");
+scanf("%d",&num);
+x=Cube(num);
+printf("\nresult: %d",x);
+}
+</pre>
+<p>Output:</p>
+<pre class="code">Enter the Number:12
+result:1728</pre>
+</div>
+
+</body>
+</html>

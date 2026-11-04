@@ -1,0 +1,372 @@
+<html>
+<head><title>Operator Questions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Operators</h1>
+<a class="back" href="index.html">Back to Home</a>
+
+<div class="question">
+<h3>Question 1: Write a program to show that example of pre-increment.</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt
+#include&ltconio.h&gt
+void main()
+{
+int num=7;
+int x;
+clrscr();
+x=++num;
+printf("value of num: %d\n",num);
+printf("value of x: %d\n",x);
+
+}
+</pre> 
+<p>Output:</p>
+<pre class="code">value of num:8
+value of x:8
+</pre>
+</div>
+
+<div class="question">
+<h3>Question 2: Write a program to show that example of post-increment.</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include&ltconio.h&gt
+void main()
+{
+int num=23;
+int x;
+clrscr();
+x=num++;
+printf("value of num :%d\n",num);
+printf("value of x: %d\n",x);
+}
+</pre> 
+<p>Output:</p>
+<pre class="code">value of num :24
+value of x:23
+</pre>
+</div>
+
+<div class="question">
+<h3>Question 3: Write a program to show that example of pre-decrement .</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include&ltconio.h&gt;
+void main()
+{
+int num=14,x;
+clrscr();
+x=--num;
+printf("value of num:%d\n",num);
+printf("value of x:%d\n",x);
+}
+</pre> 
+<p>Output:</p>
+<pre class="code">value of num:13
+value of x:13
+</pre>
+</div>
+<div class="question">
+<h3>Question 4: Write a program to show that example of post-decrement .</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include&ltconio.h&gt
+void main()
+{
+int num=65;
+int x;
+clrscr();
+x=num--;
+printf("value of num:%d\n",num);
+printf("value of x:%d\n",x);
+}
+</pre> 
+<p>Output:</p>
+<pre class="code">value of num:64
+value of x:65</pre>
+</div>
+
+<div class="question">
+<h3>Question 5: Write a program to enter 2 numbers from user add the number and show the answer , again take 2 number from user subtract the number display the answer ,again take 2 number from user multiply the number display the answer and ,again take 2 number from the user divide the number display the answer ,again take 2 number find the remainder and display the answer.</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include&ltconio.h&gt
+
+void main()
+{
+int num1,num2;
+clrscr();
+printf("enter the first number:");
+scanf("%d",&num1);
+
+printf("\nenter the second number:");
+scanf("%d",&num2);
+
+printf("add:%d\n",num1+num2);
+
+printf("\nenter the first number:");
+scanf("%d",&num1);
+
+printf("\nenter the second number:");
+scanf("%d",&num2);
+
+printf("sub:%d\n",num1-num2);
+
+printf("\nenter the first number:");
+scanf("%d",&num1);
+
+printf("\nenter the second number:");
+scanf("%d",&num2);
+
+printf("multiply:%d/n",num1*num2);
+
+printf("\nenter the first number:");
+scanf("%d",&num1);
+
+printf("\nenter the second number:");
+scanf("%d",&num2);
+
+printf("divide:%d\n",num1/num2);
+
+printf("\nenter the first number:");
+scanf("%d",&num1);
+
+printf("\nenter the second number:");
+scanf("%d",&num2);
+
+printf("remainder:%d\n",num1%num2);
+
+}
+</pre> 
+<p>Output:</p>
+<pre class="code">
+
+enter the first number:34
+enter the second number:23
+add: 57
+
+enter the first number:45
+enter the second number:65
+sub: -20
+
+enter the first number:54
+enter the second number:6
+multiply: 324
+
+enter the first number:67
+enter the second number:5
+divide: 13
+
+enter the first number:67
+enter the second number:5
+remainder:2
+
+</pre>
+</div>
+
+
+<div class="question">
+<h3>Question 6: Write a program to enter a number from the user ,the length of the number is depend on the user ,programmer should print the last digit of number.</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include&ltconio.h&gt
+void main()
+{
+long int num;
+int a;
+clrscr();
+printf("enter a number:");
+scanf("%ld",&num);
+a=num % 10;
+printf("\nlast digit of number is: %d",a);
+}
+</pre> 
+<p>Output:</p>
+<pre class="code">enter a number:45
+last digit of number is:5
+</pre>
+</div>
+
+<div class="question">
+<h3>Question 7: Enter a decimal number from the user (float) and print the right hand side of the decimal point.</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include&ltconio.h&gt
+void main()
+{
+int num;
+float num2;
+clrscr();
+printf("enter a decimal number: ");
+scanf("%f",&num2);
+num=num2;
+num2=num2-num;
+printf("\nthe  number at the right hand side of decimal point is:%f",num2);
+}
+</pre> 
+<p>Output:</p>
+<pre class="code">enter a decimal number:65.7
+the  number at the right hand side of decimal point is:7
+</pre>
+</div>
+
+<div class="question">
+<h3>Question 8: Enter a number from user and find out cube of numbers.</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include&ltconio.h&gt
+
+void main()
+{
+int num,cube;
+clrscr();
+printf("enter the number:");
+scanf("%d",&num);
+cube=num*num*num;
+printf("\ncube of the number is:%d",cube);
+}
+</pre> 
+<p>Output:</p>
+<pre class="code">enter the number:6
+cube of the number is:216
+</pre>
+</div>
+
+<div class="question">
+<h3>Question 9: Enter float number from user and round of the number .</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include&ltconio.h&gt
+
+void main()
+{
+float num,x;
+int y,roun;
+clrscr();
+printf("enter the number: ");
+scanf("%f",&num);
+y=num;
+x=num-y;
+if(x>0.5)
+{
+roun=y+1;
+}
+else
+{
+roun=y;
+}
+printf("\nRound number is: %d",roun);
+}
+</pre> 
+<p>Output:</p>
+<pre class="code">enter the number:67.8
+Round number is:68
+</pre>
+</div>
+
+<div class="question">
+<h3>Question 10: Enter a lower case character from user and print it into upper case.</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include&ltconio.h&gt
+void main()
+{
+char ch;
+clrscr();
+printf("enter a lower case character:");
+scanf("%c",&ch);
+if(ch>=97&&ch<=122)
+{
+printf("\nin uppercase: %c",ch-32);
+}
+else
+{
+printf("nothing");
+}
+}
+</pre> 
+<p>Output:</p>
+<pre class="code">enter a lower case character:h
+in uppercase:H
+</pre>
+</div>
+
+<div class="question">
+<h3>Question 11: Enter marks of students and calculate average of student’s marks.</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include&ltconio.h&gt
+
+void main()
+{
+int num1,num2,num3,num4,num5;
+float avg;
+clrscr();
+printf("enter the marks:");
+scanf("%d",&num1);
+printf("\nenter the marks:");
+scanf("%d",&num2);
+printf("\nenter the marks:");
+scanf("%d",&num3);
+printf("\nenter the marks:");
+scanf("%d",&num4);
+printf("\nenter the marks:");
+scanf("%d",&num5);
+avg=num1+num2+num3+num4+num5;
+printf("\naverage marks :%d",avg/5);
+}
+</pre> 
+<p>Output:</p>
+<pre class="code">enter the marks:56
+enter the marks:76
+enter the marks:89
+enter the marks:67
+enter the marks:45
+average marks:66.6
+</pre>
+</div>
+
+<div class="question">
+<h3>Question 12: Calculate simple interest = (P x R x T)/ 100 .</h3>
+<p>Program:</p>
+<pre class="code">
+#include &lt;stdio.h&gt;
+#include&ltconio.h&gt
+
+void main()
+{
+float princ,rate,tim,interest;
+clrscr();
+printf("enter principle amount:");
+scanf("%f",&princ);
+printf("\nenter rate:");
+scanf("%f",&rate);
+printf("\nenter time :");
+scanf("%f",&tim);
+interest=(princ*rate*tim)/100;
+printf("interest:%f",interest);
+}
+</pre> 
+<p>Output:</p>
+<pre class="code">enter principle amount:1200
+enter rate:34
+enter time:2
+interesr:816
+</pre>
+</div>
+
+</body>
+</html>

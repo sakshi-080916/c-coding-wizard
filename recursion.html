@@ -1,0 +1,101 @@
+<html>
+<head><title>Recursion Questions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Recursion</h1>
+<a class="back" href="index.html">Back to Home</a>
+
+<div class="question">
+<h3>Question 1: Write a program of recursion and display the ouput. </h3>
+<p>Program:</p>
+<pre class="code">
+#include &ltstdio.h&gt
+#include&gtconio.h&gt
+#include&ltdos.h&gt
+
+int i=1;
+void display()
+{
+if(i<=5)
+{
+i++;
+display();
+printf("%d\n",i);
+}
+printf("a\n");
+}
+void main()
+{
+clrscr();
+display();
+}
+
+</pre><p>Output:</p>
+<pre class="code">1
+2
+3
+4
+5
+aaaaa
+</pre>
+</div>
+
+
+<div class="question">
+<h3>Question 2:write a program of recursionwith global variable and display the ouput. </h3>
+<p>Program:</p>
+<pre class="code">
+#include &ltstdio.h&gt
+#include&gtconio.h&gt
+#include&ltdos.h&gt
+int i=1;
+void display()
+{
+if(i<=5)
+{i++;
+display();
+printf("%d\n",i);
+}
+}
+void main()
+{
+clrscr();
+display();
+}
+
+
+</pre><p>Output:</p>
+<pre class="code">
+66666
+</pre>
+</div>
+
+<div class="question">
+<h3>Question 3: write a program of recursion with local variable and display the output.</h3>
+<p>Program:</p>
+<pre class="code">
+#include &ltstdio.h&gt
+#include&gtconio.h&gt
+#include&ltdos.h&gt
+void display(int i)
+{
+if(i<=5)
+{i++;
+display(i);
+printf("%d",i);
+}}
+void main()
+{
+clrscr();
+display(1);
+}
+</pre>
+<p>Output:</p>
+<pre class="code">6 5 4 3 2
+</pre>
+</div>
+
+
+</body>
+</html>
